@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/intent_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intent and Activity"
+                android:onClick="activitiesAndIntents"/>
+
+            <Button
+                android:id="@+id/implicit_intent"
+                android:layout_below="@id/intent_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Implicit Intent"
+                android:onClick="implicitIntent"/>
+
+            <Button
+                android:id="@+id/debuger"
+                android:layout_below="@id/implicit_intent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Debuger"
+                android:onClick="debugerAction"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

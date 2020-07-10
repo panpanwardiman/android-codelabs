@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Debuger.DebugerActivity"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/operand_one_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type Operand 1"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/operand_two_edit_text"
+            android:layout_width="match_parent"
+            android:hint="Type Operand 2"
+            android:inputType="numberDecimal"
+            android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="onAdd"/>
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/add"
+            android:layout_toRightOf="@+id/add"
+            android:text="Sub"
+            android:onClick="onSub"/>
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add"
+            android:text="Div"
+            android:onClick="onDiv"/>
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add"
+            android:layout_toEndOf="@+id/div"
+            android:layout_toRightOf="@+id/div"
+            android:text="Mul"
+            android:onClick="onMul"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/operation_result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"/>
+
+</LinearLayout>
