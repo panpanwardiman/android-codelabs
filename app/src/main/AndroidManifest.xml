@@ -10,12 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".TabExperiment.TabExperimentActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
             android:name=".ClickableImages.OrderActivity"
             android:label="Clickable Images"
-            android:parentActivityName=".ClickableImages.ClickableImagesActivity"></activity>
-        <activity android:name=".ClickableImages.ClickableImagesActivity" />
-        <activity android:name=".Debuger.DebugerActivity" />
-        <activity android:name=".ImplicitActivity" />
+            android:parentActivityName=".ClickableImages.ClickableImagesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ClickableImages.ClickableImagesActivity" />
+        </activity>
+        <activity android:name=".ClickableImages.ClickableImagesActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Debuger.DebugerActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ImplicitActivity"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".IntentActivity"
             android:label="Activities and Intents"

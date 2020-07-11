@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.latihancodelabs.ClickableImages.ClickableImagesActivity;
 import com.example.latihancodelabs.Debuger.DebugerActivity;
+import com.example.latihancodelabs.TabExperiment.TabExperimentActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,5 +36,10 @@ public class MainActivity extends AppCompatActivity {
     public void clickableImages(View view) {
         Intent goToClickableImage = new Intent(this, ClickableImagesActivity.class);
         startActivity(goToClickableImage);
+    }
+
+    public void tabExperience(View view) {
+        Intent goTabExperience = new Intent(this, TabExperimentActivity.class);
+        startActivity(goTabExperience);
     }
 }

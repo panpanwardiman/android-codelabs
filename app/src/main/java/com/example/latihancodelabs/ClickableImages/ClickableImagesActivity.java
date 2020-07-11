@@ -12,6 +12,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ClickableImagesActivity extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "com.example.latihancodelabs.ClickableImages.extra.MESSAGE";
+
+    private String mOrderMessage;
+
     FloatingActionButton fab;
 
     @Override
@@ -24,6 +28,7 @@ public class ClickableImagesActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent goToOrder = new Intent(ClickableImagesActivity.this, OrderActivity.class);
+                goToOrder.putExtra(EXTRA_MESSAGE, mOrderMessage);
                 startActivity(goToOrder);
             }
         });
@@ -34,14 +39,17 @@ public class ClickableImagesActivity extends AppCompatActivity {
     }
 
     public void showDonutOrder(View view) {
-        displayToast(getString(R.string.donut_order_message));
+        mOrderMessage = getString(R.string.donut_order_message);
+        displayToast(mOrderMessage);
     }
 
     public void showIceCreamOrder(View view) {
-        displayToast(getString(R.string.ice_cream_order_message));
+        mOrderMessage = getString(R.string.ice_cream_order_message);
+        displayToast(mOrderMessage);
     }
 
     public void showFroyoOrder(View view) {
-        displayToast(getString(R.string.froyo_order_message));
+        mOrderMessage = getString(R.string.froyo_order_message);
+        displayToast(mOrderMessage);
     }
 }

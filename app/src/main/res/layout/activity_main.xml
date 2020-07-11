@@ -47,6 +47,14 @@
                 android:layout_height="wrap_content"
                 android:text="Clickable Images"
                 android:onClick="clickableImages"/>
+
+            <Button
+                android:id="@+id/tabExperience"
+                android:layout_below="@id/debuger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tab Experience"
+                android:onClick="tabExperience"/>
         </LinearLayout>
 
     </ScrollView>
