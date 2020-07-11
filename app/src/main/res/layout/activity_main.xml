@@ -40,7 +40,13 @@
                 android:text="Debuger"
                 android:onClick="debugerAction"/>
 
-
+            <Button
+                android:id="@+id/clickableImage"
+                android:layout_below="@id/debuger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clickable Images"
+                android:onClick="clickableImages"/>
         </LinearLayout>
 
     </ScrollView>

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.latihancodelabs.ClickableImages.ClickableImagesActivity;
 import com.example.latihancodelabs.Debuger.DebugerActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,5 +30,10 @@ public class MainActivity extends AppCompatActivity {
     public void debugerAction(View view) {
         Intent goToDebuger = new Intent(this, DebugerActivity.class);
         startActivity(goToDebuger);
+    }
+
+    public void clickableImages(View view) {
+        Intent goToClickableImage = new Intent(this, ClickableImagesActivity.class);
+        startActivity(goToClickableImage);
     }
 }
