@@ -9,9 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AlarmManager.AlarmManagerActivity"></activity>
+        <activity android:name=".Notification.NotificationActivity" />
+        <activity android:name=".BroadCast.BroadCastActivity" />
+        <activity android:name=".AsyncTask.AsyncTaskActivity" />
+        <activity
+            android:name=".CardAndColors.DetailActivity"
+            android:parentActivityName=".CardAndColors.CardColorActivity" />
+        <activity
+            android:name=".CardAndColors.CardColorActivity"
+            android:label="Card Move"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ScoreKeeperActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RecycleView.RecycleViewActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Picker.PickerActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ScrollViewActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".TabExperiment.TabExperimentActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ClickableImages.OrderActivity"
             android:label="Clickable Images"
@@ -20,14 +43,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ClickableImages.ClickableImagesActivity" />
         </activity>
-        <activity android:name=".ClickableImages.ClickableImagesActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ClickableImages.ClickableImagesActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Debuger.DebugerActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ImplicitActivity"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".IntentActivity"
             android:label="Activities and Intents"

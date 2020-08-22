@@ -55,6 +55,78 @@
                 android:layout_height="wrap_content"
                 android:text="Tab Experience"
                 android:onClick="tabExperience"/>
+
+            <Button
+                android:id="@+id/scrollViewButton"
+                android:layout_below="@id/debuger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scrolling Views"
+                android:onClick="scrollViewAction"/>
+
+            <Button
+                android:id="@+id/pickerAction"
+                android:layout_below="@id/debuger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Picker"
+                android:onClick="picker"/>
+
+            <Button
+                android:id="@+id/recyclerViewAction"
+                android:layout_below="@id/pickerAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView"
+                android:onClick="recyclerViewAction"/>
+
+            <Button
+                android:id="@+id/scorekeeper"
+                android:layout_below="@id/recyclerViewAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Drawable, styles and theme"
+                android:onClick="scoreKeeper"/>
+
+            <Button
+                android:id="@+id/cardColor"
+                android:layout_below="@id/scorekeeper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card and Colors"
+                android:onClick="cardAndColor"/>
+
+            <Button
+                android:id="@+id/asyncTask"
+                android:layout_below="@id/cardColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AsyncTask"
+                android:onClick="asyncTaskAction"/>
+
+            <Button
+                android:id="@+id/broadCast"
+                android:layout_below="@id/asyncTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BroadCast"
+                android:onClick="broadCast"/>
+
+            <Button
+                android:id="@+id/notification"
+                android:layout_below="@id/broadCast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:onClick="notificationAction"/>
+
+            <Button
+                android:id="@+id/alarmManager"
+                android:layout_below="@id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alarm Manager"
+                android:onClick="alarmManager"/>
         </LinearLayout>
 
     </ScrollView>
